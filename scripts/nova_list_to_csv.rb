@@ -5,9 +5,6 @@ exec ruby -x "$0" "$@"
 require 'date'
 require(File.expand_path('../lib/nova_helper.rb', File.dirname(__FILE__)))
 
-require 'pry'
-binding.pry
-
 # This script lists the nova vms for the current tenant and converts it to a comma separated csv
 file_location = "nova_machines-#{Date.today.to_s}.csv"
 
